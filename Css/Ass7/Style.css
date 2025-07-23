@@ -1,0 +1,151 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header 
+{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1
+{
+    font-size: 2.5em;
+    color: #2c3e50;
+}
+
+/* Main Sections */
+.middle
+{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+/* Left and Right Columns */
+#education, #Experience 
+{
+    width: 50%;
+}
+
+/* Cards */
+.card 
+{
+    background: white;
+    border-left: 4px solid #3498db;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.date 
+{
+    background: #3498db;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.field 
+{
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.place 
+{
+    color: #e74c3c;
+    font-style: italic;
+}
+
+.about
+ {
+    color: #7f8c8d;
+}
+
+/* Skills Section */
+#skills
+{
+    background: white;
+    padding: 25px;
+    margin-bottom: 40px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.skill 
+{
+    margin-bottom: 15px;
+}
+
+.skill-name 
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-bar 
+{
+    height: 10px;
+    background: #ecf0f1;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.skill-progress 
+{
+    height: 100%;
+    border-radius: 5px;
+    background: #3498db;
+}
+
+/* Work Section */
+#work {
+    margin: 40px 0; /* Adds space above and below the whole section */
+    text-align: center; /* Centers the heading and content */
+}
+
+#work h1 {
+    margin-bottom: 30px; /* Space between heading and images */
+    font-size: 2em; /* Makes heading slightly larger */
+    color: #2c3e50; /* Matching your resume's color scheme */
+}
+
+#work div {
+    display: inline-block; /* Makes divs sit side-by-side but respect text-align */
+    width: 250px;
+    margin: 10px; /* Space around each image box */
+    background: white;
+    padding: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    vertical-align: top; /* Aligns boxes at the top */
+}
+
+
+#work img 
+{
+    width: 100%;
+    display: block;
+}
+
+/* Simple Image Zoom */
+#work img 
+{
+    transition: transform 0.5s;
+}
+
+#work img:active 
+{
+    transform: scale(1.8);
+    z-index: 100;
+    position: relative;
+}
