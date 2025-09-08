@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Style.Css">
+</head>
+<body>
+<div class="container my-4">
+    <!-- Form Section -->
+    <div class="inputForm mb-4 p-4 rounded shadow">
+        <form id="crudForm">
+            <div class="mb-3">
+                <label for="productname" class="form-label">Product Name</label>
+                <input type="text" class="form-control" id="productname" placeholder="Enter Product Name"> 
+            </div>
+            <div class="mb-3"> 
+                <label for="productprice" class="form-label">Product Price</label> 
+                <input type="text" class="form-control" id="productprice" placeholder="Enter Product Price"> 
+            </div>
+            <div class="mb-3">
+                <label for="productcategory" class="form-label">Product Category</label>
+                <input type="text" class="form-control" id="productcategory" placeholder="Enter Product Category">
+            </div>
+            <div class="mb-3">
+                <label for="productdescription" class="form-label">Product Description</label>
+                <input type="text" class="form-control" id="productdescription" placeholder="Enter Product Description">
+            </div>
+            <button type="submit" id="submit" class="btn btn-primary w-100">Add Product</button> 
+        </form>
+    </div>
+
+    <!-- Table Section -->
+    <div class="outputForm p-4 rounded shadow bg-white">
+        <div class="mb-3">
+            <select id="searchField" class="form-select mb-2">
+                <option value="index">Search by Index</option>
+                <option value="name">Search by Name</option>
+            </select>
+            <input type="search" id="searchInput" class="form-control" placeholder="Search...">
+        </div>
+        <table class="table table-bordered table-striped table-hover">
+            <thead class="table-dark"> 
+                <tr>
+                    <th scope="col">Index</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Actions</th> 
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Samsung</td>
+                    <td>20</td>
+                    <td>Mobile</td>
+                    <td>Excellent</td>
+                    <td>
+                        <button type="button" class="btn btn-danger btn-sm">Delete</button> 
+                        <button type="button" class="btn btn-warning btn-sm">Update</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Apple</td>
+                    <td>30</td>
+                    <td>Mobile</td>
+                    <td>Good</td>
+                    <td>
+                        <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        <button type="button" class="btn btn-warning btn-sm">Update</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="Script.js"></script>
+</body>
+</html>
